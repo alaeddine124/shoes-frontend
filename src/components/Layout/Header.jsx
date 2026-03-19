@@ -10,8 +10,8 @@ export default function Header() {
   return (
     <header className="h-16 bg-white border-b border-stone-200 flex items-center justify-between px-6 flex-shrink-0">
       <div>
-        <h1 className="text-lg font-semibold text-stone-800">Gestion de Stock</h1>
-        <p className="text-xs text-stone-400">Boutique de chaussures</p>
+        <h1 className="text-lg font-semibold text-stone-800">Parkman — Gestion de Stock</h1>
+        <p className="text-xs text-stone-400">Boutique de chaussures premium</p>
       </div>
       <div className="flex items-center gap-3">
         <button className="relative p-2 text-stone-400 hover:bg-stone-100 rounded-lg">
@@ -23,8 +23,8 @@ export default function Header() {
           )}
         </button>
         <div className="flex items-center gap-2 pl-3 border-l border-stone-200">
-          <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center">
-            <User size={14} className="text-amber-700" />
+          <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ background: '#8B5E3C' }}>
+            <User size={14} className="text-white" />
           </div>
           <div className="hidden md:block">
             <p className="text-sm font-medium text-stone-700">{user?.name || 'Admin'}</p>
